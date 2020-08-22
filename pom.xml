@@ -60,15 +60,15 @@
                         <imageTag>latest</imageTag>
                     </imageTags>
                     <!--基础镜像-->
-                    <baseImage>java</baseImage>
+                    <!--<baseImage>java:8</baseImage>-->
                     <!--制作镜像者的本人信息-->
-                    <maintainer>madio maidioyakami@gmail.com</maintainer>
+                   <!-- <maintainer>madio maidioyakami@gmail.com</maintainer>-->
                     <!--切换到/ROOT目录-->
-                    <workdir>/ROOT</workdir>
-                    <cmd>["java","-version"]</cmd>
-                    <entryPoint>["java","-jar","${project.build.finalName}.jar"]</entryPoint>
+                    <!--<workdir>/ROOT</workdir>-->
+                   <!-- <cmd>["java","-version"]</cmd>-->
+                    <!--<entryPoint>["java","-jar","${project.build.finalName}.jar"]</entryPoint>-->
                     <!--dockerfile的位置-->
-                    <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
+                    <dockerDirectory>src/main/docker</dockerDirectory>
                     <!--远程docker文件的ip-->
                     <dockerHost>http://192.168.0.253:2375</dockerHost>
                     <resources>
